@@ -58,6 +58,7 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, UP)
 
 func dash(dash_force):
+	print("dash")
 	if(curr_speed != 0):
 		curr_speed += (curr_speed / abs(curr_speed)) * dash_force
 		
